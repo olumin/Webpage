@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+templates.microweber.com	TRUE	/	FALSE	1999999999	laravel_session	BAH9S89QqVYV5oZG9Jyjjl7TQ3QGFHqYEZL1BjvG
+templates.microweber.com	TRUE	/	FALSE	1999999999	samesite	lax
+

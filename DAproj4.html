@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        EDA- Suicide rates <br>
+
+                </header>
+                <span class="image fit"><img src="images/.PNG" alt="" /></span>
+
+                <!-- Text stuff -->
+                <h5>
+
+
+                    Data Source : <a href="https://data.world/datasets/suicide"> data.world</a><br>
+
+                </h5>
+                <h4>Softwares: Python </h4>
+
+
+
+                <p>
+                    <br>
+
+                    <h4> Workflow</h4>
+
+                    <h4> 1. Objective </h4>
+                    <h4> 2. Data preparation  </h4>
+                    <h4> 2. Analysis and Visualization  </h4>
+                    <h4> 3.	Summary of results </h4>
+
+
+
+                    <br>
+
+
+                    <h4> 1. Objective </h4>The project attempts to analyze the suicide rates patterns and its link to certain variables across several countries and age group <br> Suicide rates are one of the leading cause of deaths. I tried to identify the relationship between suicide rates and growing population, gdp percapita or if its affiliated with certain age groups and Gender.
+                    <br /><br />
+                    <h4>2. Data Preparation </h4>
+                    <h4>Loading the Libraries </h4>
+                    The numpy, pandas library was used for analysis while the matplotlib, seaborn for visualizing the dataset.
+                    <span class="image fit"><img src="images/EDA/ed1.PNG" alt="" /></span>
+
+                    <h4>Importing the dataset</h4>
+                    The dataset was imported in csv format using the pandas library
+
+                    <span class="image fit"><img src="images/EDA/ed2.PNG" alt="" /></span>
+
+                    <h4>Data Cleaning</h4>
+                    The dataset was checked for missing values. after checking the shape to identify the number of rows and columns, the datatype was also checked.
+                    <span class="image fit"><img src="images/EDA/ed3.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/EDA/ed4.PNG" alt="" /></span>
+
+                    <span class="image fit"><img src="images/EDA/ed5.PNG" alt="" /></span>
+                    <h3>Analysis and Visualization </h3> Check the frequency table for the age ranges.
+                    <span class="image fit"><img src="images/EDA/ed6.PNG" alt="" /></span>
+
+                    Bar plot to check the number of Suicides by top Countries
+                    <span class="image fit"><img src="images/EDA/ed7.PNG" alt="" /></span>
+                    The barplot shows that the russian federation have the highest number of suicide rates, followed by the united stetes and the least being the UK and Poland. This was done by grouping the suicide number by countries.
+                    Bar plot to check the number of Suicides by top Countries
+                    <span class="image fit"><img src="images/EDA/ed8.PNG" alt="" /></span>
+                    The bar plot of the Number of suicides by age shows that suicide rates are more common within the age group 35-54, 55-74, while it is very low between 5-14years viewing this pattern accross the whole countries.
+                    Plot of Suicide by Sex
+                    <span class="image fit"><img src="images/EDA/ed9.PNG" alt="" /></span>
+                    Based on the size of the bars, there seems to be a significantly more suicides among male than among female.
+                    Plot of Number of Suicides versus generation
+                    <span class="image fit"><img src="images/EDA/ed10.PNG" alt="" /></span>
+                    The suicides rate for Baby Boomers(People born after the second world war) seems to be high compared to the others.
+                    Plot of Number of Suicides versus Population
+                    This is a numerical vs numerical data, so, scatter plot will be a good preference.
+                    <span class="image fit"><img src="images/EDA/ed11.PNG" alt="" /></span>
+                    In order to a more clearer picture to establish this relationship, we introduce a regression line.
+                    <span class="image fit"><img src="images/EDA/ed12.PNG" alt="" /></span>
+                    To view the relationship lineraly, using a line plot
+                    <span class="image fit"><img src="images/EDA/ed13.PNG" alt="" /></span>
+                    We can observe that there appears to be a significant relationship between the suicide rate and population. While majority of suicide rates was seen to decrease with decreased population P1, it is worthy of note that, in few areas, suicide rates did not increase in a direct proportion with the population P2, P3. This means that globally population explosion is not usually responsible for high suicide rates recorded.
+                    Effect of gdp percapita on the Suicide rate
+                    <span class="image fit"><img src="images/EDA/ed14.PNG" alt="" /></span>
+                    For a population sample of a hundred thousand (100K), contrary to the convention, from the scatter plot, we can see certain countries G1 Has a high number of suicide rates when the gdp percapita was from less than $50000. However, another 100K population sample G2 showed a reduction in suicide rate as the gdp percapita increased. The gdp percapita is the monetary value of a country per person. In general, from the data, on the left side G1, we have more of a low suicide rates when the gdp per capita is low and few low suicide rate when the gdp per capita is high at G2. Note that this plot cut across all the countries.
+                    We can view these correlation among the continous variable using the Heat map
+                    <span class="image fit"><img src="images/EDA/ed15.PNG" alt="" /></span>
+                    The result of the heat map shows that there exist a small but insignificant correlation between the suicides rate and gdp_percapita($)=0.1
+                    Integrating the data
+                    Bar plot to check the Number of suicides by sex and age to generate a single plot
+                    <span class="image fit"><img src="images/EDA/ed16.PNG" alt="" /></span>
+
+                    Trend plot of suicide rates across all the years
+                    <span class="image fit"><img src="images/EDA/ed18.PNG" alt="" /></span>
+                    Suicide rate began to increase from the year 1985 and gained an upward trend until 2004 where it began to decline gradually and snapped down from the year 2014 to 2015. <br><br>
+                    <h3>3. Summary </h3>
+                    Plotting the patterns of specific countries (e.g suicide rates vs population for Albania ,suicide rates vs gdp percapita for UK and others) will help us identify specific features per countries responsible for the general view of the relationship shown in the scatter plot above.
+                    In a global view, the result have shown that there exist a high rate of suicide among men mostly amongst young adults (35-54) and this increase does not necessarily have to do with population explosion while gdp percapita may contribute in a certain ways as shown in the plot in the analysis section.
+
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="EDA.html" class="button primary fit small">Click to view code</a></li>
+
+
+
+
+                </ul>
+
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+</div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

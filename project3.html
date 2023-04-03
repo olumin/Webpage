@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        ML model to predict patient with heart disease <br />
+                        using the RandomForest, Linear SVC classifier.
+                </header>
+
+                <!-- Text stuff -->
+                <h5>Data Source: Kaggle</h5>
+                <h5>Libraries and Packages: Scikit-learn, Python-Numpy, Pandas</h5>
+                <h5>Keywords:</h5>
+                <h6>AUC: Area Under the Curve</h6>
+                <h6>Fpr-False Positive rate</h6>
+                <h6>Tpr-True Positive rate</h6>
+
+
+
+                <p>
+                    <br>
+
+                    <h4> Outline</h4>
+
+                    <h4>  Understanding the objective</h4>
+                    <h4> Methodology</h4>
+                    <h5> 1.	Data Setup</h5>
+                    <h5> 2.	Data Cleaning </h5>
+                    <h5>3.	Creating a feature matrix</h5>
+                    <h5>4.	Choosing the right model and hyperparameters</h5>
+                    <h5>5.	Model Evaluation</h5>
+                    <h5>6.	Saving and Loading</h5>
+                    <h5>7.	Summary of Results</h5>
+
+                    <br>
+
+                    <h5> Objective</h5> The objective of this project is to provide a technology to determine the prices of new cars that is being produced. Employing the use of predictions models will help to set the most accurate prices for cars based on market value. thereby leading to better growth and outcomes for manufacturers.
+                    Features
+                    <li>Age: displays the age of the individual. </li>
+                    <li>
+                        sex: displays the gender of the individual using the following format :
+                        1 = male
+                        0 = female
+                    </li>
+                    <li>
+                        Chest-pain type: displays the type of chest-pain experienced by the individual using the following format :
+                        1 = typical angina
+                        2 = atypical angina
+                        3 = non — anginal pain
+                        4 = asymptotic
+                    </li>
+                    <li>Resting Blood Pressure: displays the resting blood pressure value of an individual in mmHg (unit) </li>
+                    <li>Serum Cholestrol: displays the serum cholesterol in mg/dl (unit) </li>
+                    <li>
+                        Fasting Blood Sugar: compares the fasting blood sugar value of an individual with 120mg/dl.
+                        If fasting blood sugar > 120mg/dl then : 1 (true)
+                        else : 0 (false)
+                    </li>
+                    <li>
+                        Resting ECG : displays resting electrocardiographic results
+                        0 = normal
+                        1 = having ST-T wave abnormality
+                        2 = left ventricular hyperthrophy
+                    </li>
+                    <li>Max heart rate achieved : displays the max heart rate achieved by an individual. </li>
+                    <li>
+                        Exercise induced angina :
+                        1 = yes
+                        0 = no
+                    </li>
+                    <li>ST depression induced by exercise relative to rest: displays the value which is an integer or float. </li>
+                    <li>
+                        Peak exercise ST segment :
+                        1 = upsloping
+                        2 = flat
+                        3 = downsloping
+                    </li>
+                    <li>Number of major vessels (0–3) colored by flourosopy : displays the value as integer or float.</li>
+                    <li>
+                        Thal : displays the thalassemia :
+                        3 = normal
+                        6 = fixed defect
+                        7 = reversible defect
+                    </li>
+
+
+                    Target Variable: The target shows the diagnosis of heart disease : Displays whether the individual is suffering from heart disease or not :
+                    0 = absence
+                    1 = present
+
+                    The score is being used as a conditional statement for classification as viewed in the deployed model section.
+
+                    <br> <br><h4>1.Data Setup<br></h4>
+                    <ul>
+                        <li>Pip installing the dependencies.</li>
+                        <li>Importing the dataset and required libraries</li>
+
+                    </ul>
+                    <span class="image fit"><img src="images/heart/h1.PNG" alt="" /></span>
+
+
+                    <h5>  2. Data Cleaning </h5>
+                    The data was inspected for null values to remove abnormality. However, the dataset showed no missing values.
+                    <span class="image fit"><img src="images/heart/h3.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/heart/h4.PNG" alt="" /></span>
+
+                    <h5>  3. Creating a feature matrix </h5>
+                    Data was split into x and y to separate features to be trained from the target .
+                    <span class="image fit"><img src="images/heart/h2.PNG" alt="" /></span>
+
+
+                    <h5>  4. Choosing the right model and hyperparameters </h5>
+                    Check<a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">link</a>
+                    <span class="image fit"><img src="images/heart/h5.PNG" alt="" /></span>
+                    <h5> Model Fitting</h5>
+                    <span class="image fit"><img src="images/heart/h6.PNG" alt="" /></span>
+
+
+                    The Random Forest classifier and Linear SVC was chosen as an estimator as prescribed by the scikit learn sheet in the documentation above. The x data was split into training and testing,the data used in training is about 20% indicated by test_size=0.2.The shape of the model was examined and the model fit into train-data.
+                    RandomForest Classifier
+                    <h5>  5. Model Evaluation</h5>
+
+                    The confusion matrix and scoring parameters were adopted in evaluating this model. The classification result shows an 100% indicating the RandomForest model is a perfect one.
+                    <span class="image fit"><img src="images/heart/h7.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/heart/h8.PNG" alt="" /></span>
+                    The Confusion matrix summary shows the same result with the classification report showing that the classification is accurate.
+                    <span class="image fit"><img src="images/heart/h9.PNG" alt="" /></span>
+                    The mean absolute error for the predicted value or its likely deviation from the original value is 0.0.. which is perfect.
+                    Scoring Parameters
+                    <span class="image fit"><img src="images/heart/h10.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/heart/h11.PNG" alt="" /></span>
+
+
+                    Linear SVC
+
+                    The LinearSVC gave a score of 79.5%. This means about 80% of the data should be accurate
+                    <span class="image fit"><img src="images/heart/h12.PNG" alt="" /></span>
+                    Evaluating the Linear SVC model
+
+
+                    Evaluation Metrics
+
+                    Score Parameters: 'accuracy', 'average precision', 'recall', 'f1'
+                    Metric functions AUC/ROC score , ' Confusion matrix, Classification report
+                    1. Source Parameter- cross_validation
+                    On the LinearSVC:
+
+                    <span class="image fit"><img src="images/heart/h13.PNG" alt="" /></span>
+                    On the RandomForest
+                    <span class="image fit"><img src="images/heart/h14.PNG" alt="" /></span>
+                    Accuracy
+                    LinearSVC
+                    <span class="image fit"><img src="images/heart/h15.PNG" alt="" /></span>
+                    RandomForest
+                    <span class="image fit"><img src="images/heart/h16.PNG" alt="" /></span>
+                    Recall
+                    LinearSVC
+                    <span class="image fit"><img src="images/heart/h17.PNG" alt="" /></span>
+                    RandomForest
+                    <span class="image fit"><img src="images/heart/h18.PNG" alt="" /></span>
+                    F1
+                    LinearSVC
+                    <span class="image fit"><img src="images/heart/h19.PNG" alt="" /></span>
+
+                    RandomForest
+                    <span class="image fit"><img src="images/heart/h20.PNG" alt="" /></span>
+                    From several iterations,the Linear SVC model have about 75% likelihood of predicting the right label i.e about 7 out of 10 times while the RandomForest have over 90% likelihood
+
+                    Metric Functions
+                    AUC/ROC
+                    comparison of a model true positive rate vs model false positive rate
+                    *True positive= model predicts 1 when truth is 1
+                    *False positive= model predicts 1 when truth is 0
+                    *True negative =model predicts 0 when truth is 0
+                    *False negative =model predicts 0 when truth is 1
+                    Plotting the ROC
+                    <span class="image fit"><img src="images/heart/h21.PNG" alt="" /></span>
+
+                    Confusion Matrix
+                    The confusion matrix will help to compare the labels a model predicts and the actual labels it was meant to predict. It reveals where the model is getting confused.
+                    <span class="image fit"><img src="images/heart/h22.PNG" alt="" /></span>
+                    Making the confusion matrix more visual using the Heat Map
+                    <span class="image fit"><img src="images/heart/h23.PNG" alt="" /></span>
+
+
+                    <h5>  7. Saving and Loading </h5>
+                    The pickle module was used to save the datasets to be deployed.
+
+
+                    <h5>  8. Summary of results </h5>
+                    A perfect model has an f1-score of 1.00. f1-score of 1.00 is perfect, perfect accuracy is equal to 1.0, we recorded an accuracy of 1.0
+
+                    *Accuracy is a good measure to start with if all classes are balanced (e.g same amount of samples which are labelled with 0 or 1
+                    *Precision and recall become more important when classes are imbalanced
+                    *if false positive are worse tan false negatives, aim for higher precision
+                    *If false negative predictions are worse than false positives, aim for higher recall.
+                    *F1-score is a combination of precision and recall.
+                    The RandomForest model showed the best performance for this prediction.
+
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="Heart.html" class="button primary fit small">Click to view code</a></li>
+                    <li><a href="Deployed.html" class="button primary fit small">View the deployed Model</a></li>
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h5>Social</h5>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

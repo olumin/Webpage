@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Predicting patients with Brain stroke  <br />
+                        using the Logistic Regression classification Algorithm.
+</header>
+
+                <!-- Text stuff -->
+                <h5>Data Source: Kaggle</h5>
+                <h5>Libraries and Packages: Scikit-learn, Python-Numpy, Pandas</h5>
+               
+
+
+
+                <p>
+                    <br>
+
+                    <h4> Outline</h4>
+
+                    <h4>  Understanding the objective</h4>
+                    <h4> Methodology</h4>
+                    <h4> 1.	Data Setup</h4>
+                    <h4> 2.	Data Cleaning </h4>
+                    <h4>3.	Defining a feature matrix</h4>
+                    <h4>4.	Building the model</h4>
+                    <h4>5.	Model Evaluation</h4>
+                    <h4>6.	Saving and Loading</h4>
+                    <h4>7.	Summary </h4>
+
+                    <br>
+
+                    <h4> Objective</h4>  Patients and medical attendants face a lot of uncertainity during, and after hospital encounters. Uncertainities like the possibilitty of a patient being diagnosed of an ailment after measuring certain vital signs. Machine learning models are capable of predicting a patient's outcome with up to a 90-95% accuracy. In this project, we will be building a model to predict and classify patients with the possibility of Brain stroke using the Logistic Regression Algorithm.<br>
+                    <h4> Features </h4>
+                    <h4> Categorical features </h4>
+
+                    Gender<br>
+                    Age<br>
+                    Marital status(Ever married)<br>
+                    Residence type<br>
+                    smoking status<br>
+                    Work type<br><br>
+
+                    <h4> Numerical features </h4>
+
+
+                    Hypertension<br>
+                    heart_disease<br>
+                    avg_glucose_level<br>
+                    bmi  <br><br>
+
+
+                    <h4>Prediction Variables </h4>
+                    <li>
+                        Age
+                    </li>
+                    <li>
+                        Hypertension
+                    </li>
+                    <li>
+                        heart disease
+                    </li>
+                    <li>
+                        avg glucose level
+                    </li>
+                    <li>
+                        bmi- body mass index
+                    </li>
+
+
+
+
+                    <h4>Output Variables </h4> The target shows the diagnosis of brain stroke: Displays whether the individual is suffering from brain stroke or not :
+                    0 = absence
+                    1 = present
+
+                    The score is being used as a conditional statement for classification as viewed in the deployed model section.
+
+                    <br> <br><h4>1.Data Setup<br></h4>
+                    <ul>
+                        <li>Pip installing the dependencies.</li>
+                        <li>Loading the dataset and required libraries</li>
+
+                    </ul>
+                    <span class="image fit"><img src="images/Brain/b1.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/Brain/b2.PNG" alt="" /></span>
+
+
+
+                    <h4>  2. Data Cleaning </h4>
+                    The data was inspected for null values to remove abnormality. However, the dataset showed no missing values.
+                    <span class="image fit"><img src="images/Brain/b3.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/Brain/b4.PNG" alt="" /></span>
+
+                    <h4>  3. Defining a feature matrix </h4>
+                    Data was split into x and y to separate features to be trained from the response vector y
+                    <span class="image fit"><img src="images/Brain/b5.PNG" alt="" /></span>
+                    The data was then split into training and testing.
+                    <span class="image fit"><img src="images/Brain/b6.PNG" alt="" /></span>
+
+
+                    <h4>  4. Building the model</h4>
+                    Check <a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">link</a>
+                    <span class="image fit"><img src="images/Brain/b7.PNG" alt="" /></span>
+                    The Logistic Regression was imported from scikitlearn and fit into the split data for training.
+
+
+                    Predict the Target variable <br>
+                    <span class="image fit"><img src="images/Brain/b7.PNG" alt="" /></span>
+
+                    <h4> 5. Model Evaluation</h4>
+                    Model performance and Accuracy measurements was evalated using a number of performance metrics as shown below
+                    <span class="image fit"><img src="images/Brain/b8.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/Brain/b9.PNG" alt="" /></span>
+                    The model shows a classification accuracy score of 95% <br>
+                    Comparing the Actual and Predicted response value for the first 30 predictions <br>
+                    <span class="image fit"><img src="images/Brain/b10.PNG" alt="" /></span>
+                    Confusion matrix <br>
+                    <style>
+                        img {
+                            max-width: 200%;
+                            max-height: 200%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/Brain/b11.PNG" alt="" srcset="">
+                    </div>
+
+                    
+                    Using the confusion matrix to calculate the classification metrics
+                    <span class="image fit"><img src="images/Brain/b12.PNG" alt="" /></span>
+                    Printing a classification report <br>
+                    <span class="image fit"><img src="images/Brain/b13.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/Brain/b14.PNG" alt="" /></span>
+                    The Area under the curve (AUC) score shows 85% accuracy. This is ususally adopted when the class is imbalanced.
+                    <br>
+                    <h4> 6. Saving and Loading the Model</h4>
+                    The trained model was saved and loaded with the pickle library for deployment.
+                    <span class="image fit"><img src="images/Brain/b15.PNG" alt="" /></span>
+
+
+
+
+
+                    <h4>  7. Summary of results </h4>
+                    A perfect model has an f1-score of 1.00. The model gave an f1-score of 0.98, perfect accuracy is equal to 1.0, we recorded an accuracy of 0.95 and AUC score of 85%. The actual and predicted value in comparison showed that the model is an excellent one for the classification is ready for deployment.
+
+
+
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="brain.html" class="button primary fit small">Click to view code</a></li>
+                    <li><a href="https://olumin-apps-brain-stroke-xtdmpr.streamlit.app/" class="button primary fit small">View the deployed Model</a></li>
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

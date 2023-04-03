@@ -1,0 +1,49 @@
+
+import requests       #To send request and get back the html page
+from bs4 import BeautifulSoup
+import pandas as pd
+
+
+
+url = "https://www.worldometers.info/world-population/population-by-country/"
+
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+
+#We scrap the columns separately and get the data of each rows
+
+rows = soup.find('table', {'id':'example2'}).find('tbody').findAll('tr') #The columns are embeded in the tr tag.
+
+
+#let's create a list
+countries_list=[]
+
+
+for row in rows:
+    dic ={} #Create a dictionaty, Add the data of each row to dictionary and append the dictionary each time.
+
+    dic['Country']= row.find_all('td')[1].text #To find information in the first column
+    dic['Population 2020']= row.find_all('td')[2].text.replace(",","")   #for population 
+    dic['Yearly change']= row.find_all('td')[3].text
+    dic['Net change']= row.find_all('td')[4].text
+    dic['Land Area (Km2)']= row.find_all('td')[6].text.replace(",","")
+    dic['Fertility Rate']= row.find_all('td')[8].text
+    dic['Urban pop %']= row.find_all('td')[10].text
+
+    countries_list.append(dic)
+
+print(countries_list[0]) #print that of the first row only.
+
+#Let's save it 
+
+df = pd.DataFrame(countries_list)
+df.to_excel('countries_data.xlsx', index=False)
+df.to_csv('countries_data.csv', index=False)
+
+
+
+    
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Web Scrapping using Beautiful Soup <br>
+
+                </header>
+
+                <!-- Text stuff -->
+                <h4>Data Source: World Population dataset</h4>
+                <h4>Libraries and Packages: BeautifulSoup, Pandas </h4>
+
+
+
+                <p>
+                    <br>
+
+                    <h4> Steps</h4>
+
+                    <h4>   Objective </h4>: To extract dataset from a webpage (open source)
+                    <h4> 1. Importing the libraries </h4>
+                    <h4> 2.	Webscrapping </h4>
+                    <h4> 3. Storing the extracted data </h4>
+
+
+
+
+                    <br>
+
+
+                    <h3> 1.importing the Libraries </h3> The first process begins by importing BeautifulSoup and the Pandas library after the pip install(if needed) as well as the requests to send request and get back the Html page. <br>
+
+                    <span class="image fit"><img src="images/webscra/bsa.PNG" alt="" /></span>
+
+
+                    <h3>2. WebScrapping </h3><br>
+                    <li>
+                        Assign the url and request the page.
+                    </li>
+                    <span class="image fit"><img src="images/webscra/bs1.PNG" alt="" /></span>
+                    <li>Use the Beautiful soup to parse the html and print it to view all the tags</li>
+
+                    <span class="image fit"><img src="images/webscra/bs2.PNG" alt="" /></span>
+
+                    <li>Inspect the elements</li>
+
+                    Go to the webpage to inspect the elements to identify the tag where the data of interest is embedded
+                    In this case, we will be scrapping the columns separately <br>
+                    <span class="image fit"><img src="images/webscra/bs3.PNG" alt="" /></span>
+
+                    <li> Create a list and a dictionary to add the data in the column and append the dictionary.</li>
+
+                    <span class="image fit"><img src="images/webscra/bs4.PNG" alt="" /></span>
+
+                    In doing this, all the data scrapped will be assigned to a dictionary ready to be converted into a dataframe
+                    <h4> 3. Storing the extracted data </h4>
+                    The data in the dictionary can now be saved by conveting it into a dataframe using the Pandas library.
+                    <span class="image fit"><img src="images/webscra/bs5.PNG" alt="" /></span>
+
+                    The data have now been saved and can be opened in csv or xlsx format using the MS-Excel as shown above.
+
+
+
+                </p>
+
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="scap.html" class="button primary fit small">Click to view code</a></li>
+                   
+
+
+
+                </ul>
+                <ul>
+                    <hr />
+
+                    <ul>
+
+                        <a href="#top" class="button-64">scroll to top</a>
+                    </ul>
+
+
+                    <h4>Social</h4>
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                        <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                    </ul>
+
+
+
+
+
+
+
+</div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

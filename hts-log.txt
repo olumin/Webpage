@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 01 Apr 2023 00:05:24 at https://templates.microweber.com/banking/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://templates.microweber.com/banking/ -O1 "C:\Users\Fresh\Downloads\ASD" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+00:05:38	Error: 	"Not Found" (404) at link https://templates.microweber.com/banking/icon_selector.js (from https://templates.microweber.com/banking/)
+00:05:43	Error: 	"Not Found" (404) at link https://templates.microweber.com/banking/userfiles/templates/banking/assets/img/dropable_zone_bg.svg (from https://templates.microweber.com/banking/userfiles/templates/banking/assets/css/main.css)
+00:05:43	Error: 	"Not Found" (404) at link https://templates.microweber.com/banking/userfiles/templates/banking/assets/img/dropable_zone_image.svg (from https://templates.microweber.com/banking/userfiles/templates/banking/assets/css/main.css)
+00:05:43	Error: 	"Not Found" (404) at link https://templates.microweber.com/banking/userfiles/templates/banking/assets/img/dropable_zone_media.svg (from https://templates.microweber.com/banking/userfiles/templates/banking/assets/css/main.css)
+00:05:45	Error: 	"Forbidden" (403) at link https://templates.microweber.com/banking/userfiles/modules/microweber/img/ (from https://templates.microweber.com/banking/userfiles/modules/microweber/css/ui.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 23 seconds : 47 links scanned, 41 files written (9042332 bytes overall) [7492741 bytes received at 325771 bytes/sec], 1970781 bytes transferred using HTTP compression in 14 files, ratio 18%, 6.7 requests per connection
+(5 errors, 0 warnings, 0 messages)

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+
+
+                    <h3>
+                        Market Basket Analysis <br />
+                        using the apriori Algorithm with python
+                </header>
+                <span class="image fit"><img src="images/pexels-vecislavas-popa-157147.jpg" alt="" /></span>
+
+                <!-- Text stuff -->
+                <h4>Data Source: Kaggle</h4>
+                <h4>Libraries and Packages: Scikit-learn, python-Pandas, Numpy</h4>
+                <p>
+                    <br>
+
+                    <h4>Implementation steps</h4>
+
+                    <h4> 1.	Theoretical background and Objective</h4>
+                    <h4> 2.	Data Setup</h4>
+                    <h4> 3.	Data Cleaning & Exploratory Data Analysis (EDA)</h4>
+                    <h4>4.	Building the Model</h4>
+                    <h4>5.	Data Visualization</h4>
+
+
+
+                    <br>
+
+                    <h4> 1.	Theoretical Background and Objective</h4>
+                    Market Basket Analysis is a technique used by retailers to uncover associations between items that customer places in their shopping baskets.The main objective of Market basket analysis enables sales and marketing teams to develop more effective product placement, pricing, cross-sell, and up-sell strategies. It is a strategy used to design layouts basedon customer's shopping behaviour an purchase histories. <br>
+                    Market basket analysis is divided into Descriptive, predictive and inferential.
+
+                    <li>Association rule for Market Basket Analysis</li>
+
+                    <style>
+                        img {
+                            max-width: 200%;
+                            max-height: 200%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/MBA/mb1.png" alt="" srcset="">
+                    </div>
+                    Association Rule Mining is used in identifying an association between different items in a set and then find frequent patterns in a transactional database.
+
+                    <li>Algorithms used in MBA</li>
+                    Some of the Data mining algorithms used in market basket analysis are:
+                    <ul>
+                        <li>Apriori</li>
+                        <li>SETM Algorithm</li>
+                        <li>AIS</li>
+                        <li>Frequent pattern Tree</li>
+                    </ul>
+                    In this project we will be using the Apriori algorithm. The Apriori algorithm helps to find frequent itemsets in transactions and identifies association rules between these items. The limitation of the Apriori Algorithm is frequent itemset generation. It needs to scan the database many times, leading to increased time and reduced performance as a computationally costly step because of a large dataset. It uses the concepts of Confidence and Support.
+
+                    <br> <br><h4> Benefits<br></h4>
+                    <ul>
+                        <li>Optimizing of in-store operations such as product placement and cross-selling to boost sales</li>
+                        <li>
+                            Optimizes marketing strategies and campaigns
+                        </li>
+                        <li> Helps in demographic data analysis</li>
+                        <li>  Identifies customer behavior and pattern</li>
+                        <li> Helps to increase Return on Investment</li>
+
+                    </ul>
+                    <br><h4>Steps to implementation in python<br></h4>
+                    <ul>
+                        <li>Determine minimum support</li>
+                        <li>find out subsets with higher support than minimum support</li>
+                        <li>
+                            Find all the rules for these subsets with higher confidence than minimum confidence.
+                        </li>
+                        <li> Sort these association rules in specified order.</li>
+                        <li> Analyze the rules along with their confidence and support.</li>
+                    </ul>
+
+                    <h4>2. Data Setup<br></h4>
+                    <ul>
+
+                        <li>Importing the dataset and required libraries</li>
+
+                    </ul>
+                    <span class="image fit"><img src="images/MBA/mb2.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/MBA.mb3.PNG" alt="" /></span>
+
+                    <h4>  3. Data Cleaning & Exploratory Data Analysis (EDA)</h4>
+                    Exploratory data analysis was done on the datasets to investigate and summarize their main characteristics. This was done using data visualization methods. However, the data was rid of any nulls prior to analysis.
+
+                    <span class="image fit"><img src="images/px3.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/px4.PNG" alt="" /></span>
+
+                    <h4>  4. Feature Engineering </h4>
+                    The features in the dataset was separated into numerical and categorical. This helped in extracting the feature of interest in our model training.
+                    In this project, the some of the categorical feature selected was converted into numerical data using the Column transformer before its subjected it into training and testing.
+
+                    <style>
+                        img {
+                            max-width: 200%;
+                            max-height: 200%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/px5.png" alt="" srcset="">
+                    </div>
+
+
+                    
+                    <h4>Categorical Features</h4>
+
+                    <ul>
+                        <li>Town.</li>
+                        <li>Property Type</li>
+                        <li>Residential Type</li>
+
+                        <h4>Numerical Features</h4>
+                        <br>
+                        <ul>
+                            <li>Assessed Value(selected).</li>
+                            <li>Sales Amount(target)</li>
+                            The data was split into training and testing.
+                            <br>
+                            <br>
+                            <style>
+                                img {
+                                    max-width: 200%;
+                                    max-height: 200%;
+                                }
+
+                                .picture1 {
+                                    width: 200px;
+                                    height: 300px;
+                                }
+                            </style>
+                            <div class="picture1">
+                                <img src="images/px6.png" alt="" srcset="">
+                            </div>
+
+                           
+                            Check
+                            <a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">link</a>.
+                            <br>
+                            <br>
+                            <h4>  5. Choosing an Estimator </h4>
+                            The estimator selected were the Linear Regression, Lasso and Elastic-Net and fitted into the training and testing data
+                            <span class="image fit"><img src="images/px7.png" alt="" /></span>
+
+                            <h4>  6. Model Evaluation</h4>
+
+                            The model was evaluated using several scoring metrics to measure the performance of the model on the training data. This was done using the R-squared, Mean Absolute Error (MAE), Mean squared Error.
+                            <span class="image fit"><img src="images/px8.png" alt="" /></span>
+                            <span class="image fit"><img src="images/px9.png" alt="" /></span>
+
+                            <h4>  7. Saving and Loading </h4>
+                            The pickle module was used to save the datasets to be deployed.
+                            <span class="image fit"><img src="images/px10.png" alt="" /></span>
+                            <span class="image fit"><img src="images/px11.png" alt="" /></span>
+
+
+                            <h4>  8. Summary of results </h4>
+                            The three model showed an R-squared value of 1.0, The Linear Regression model showed the least Mean squared error of 1.77, and MAE of 1.05. compared to the Lasso and Elastic Net(2.63). The lower the MSE, the better the model and an MSE, MAE of 0 shows a perfect model.
+                            Comparing the outcome of the three models by comparing the actual value to the predicted, the Linear regression model, Elastic Net gave the closest value for prediction with the LinearRegression being the most accurate. The model was not subjected to any improvement due to its good performance metrics.
+
+</p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="Real.html" class="button primary fit small">Click to view code</a></li>
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

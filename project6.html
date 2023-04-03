@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Customer Segmentation using K-Means Clustering <br>
+
+                </header>
+
+                <!-- Text stuff -->
+                <h5>Data Source: Kaggle(Customer Loyality dataset)</h5>
+                <h5>Softwares: python- Numpy, Pandas, Scikitlearn </h5>
+
+
+
+                <p>
+                    <br>
+
+                    <h4> Outline</h4>
+
+                    <h4> 1. Understanding the objective </h4>
+                    <h4> 2. Requirements </h4>
+                    <h4> 3.Importing the neccessary libraries & data set</h4>
+                    <h4> 4. Data Cleaning and Exploring data Analysis</h4>
+
+                    <h4> 5.Model Training</h4>
+                    <h4> 6.Data Visualization</h4>
+
+
+
+
+
+
+
+                    <br>
+
+
+                    <h4> Understanding the Objective </h4> K means clustering is an unsupervised machine learning algorithm that separates a given data into a specified number of
+
+                    clusters<br> in order to uncover hidden patterns in the data. This project attempts to divide the Mall customers into groups of similar characterisitics.
+                    <br>
+                    
+                    In
+                    this case, based on their spending score and Annual Income. In this case, it is a behavioural market segmentation and this is specifically useful in identifying which customer is more valuable to the business.
+                    <style>
+                        img {
+                            max-width: 230%;
+                            max-height: 400%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/RFM/rf1.PNG" alt="" srcset="">
+                    </div>
+
+
+
+                    <br> <br><h4>Uses of Clustering <br></h4>
+                             <ul>
+                                 <li>Marketing: To help determiine who gets discounts, offers or promotion codes based on the groups.</li>
+                                 <li>Document Analysis: To group texts and documents according to similarity </li>
+                                 <li>Increase customer retention and decrease churn </li>
+                                 <li>Determine appropriate product pricing.</li>
+                                 <li>
+                                     Real Estate: To  understand and divide various property locations based on value and importance.
+                                 </li>
+
+                                 <br>
+
+
+
+                                 <h4>  2. Requirements </h4>
+                                 Build a database to segment customers based on their Annual income and spending score.
+                                 <li>How many categories of customers do we have?</li>
+                                 The data includes the following features:
+                                 <br>
+
+                                 1. Customer ID
+                                 <br>
+
+                                 2. Customer Gender
+                                 <br>
+
+                                 3. Customer Age
+                                 <br>
+
+                                 4. Annual Income of the customer (in Thousand Dollars)
+                                 <br>
+
+                                 5. Spending score (based on customer behaviour and spending nature)
+
+                                 <br>
+                                 <br>
+
+
+                                 <h4>  Importing the neccessary libraries and data set </h4>
+                                 The cleaned dataset was imported in Excel csv format into the Google colaboratory notebook
+                                 <span class="image fit"><img src="images/means/k1.PNG" alt="" /></span>
+
+                                 <h4> Data Cleaning and Exploring data Analysis </h4>
+
+                                 A detailed Exploratory data analysis was done on the data using the Pandas profile Report.
+                                 Overview
+                                 <span class="image fit"><img src="images/means/k2.PNG" alt="" /></span>
+                                 variables
+                                 <span class="image fit"><img src="images/means/k2b.PNG" alt="" /></span>
+                                 <span class="image fit"><img src="images/means/k3.PNG" alt="" /></span>
+                                 Correlation
+                                 <div class="picture1">
+                                     <img src="images/means/k4.PNG" alt="" srcset="">
+                                 </div>
+
+                                 Missing values:
+                                 <span class="image fit"><img src="images/means/k5.PNG" alt="" /></span>
+
+                                 <span class="image fit"><img src="images/means/k6.PNG" alt="" /></span>
+
+                                 There are no missing values in the dataset
+                                 Plot of Age with Total percentage of Income
+                                 <span class="image fit"><img src="images/means/k7.PNG" alt="" /></span>
+                                 The plot shows that the age group on the legend as we scroll, each contributes the displayed percentage of the Total Income on the doughnut chart
+
+
+
+                                 Specifying our data for x in terms of Annual Income and Spending score
+                                 <span class="image fit"><img src="images/means/k8.PNG" alt="" /></span>
+
+                                 <h4> Model Training </h4>
+                                 Choosing the number of clusters using the WCSS- Within clusters sum of squares
+                                 <span class="image fit"><img src="images/means/k9.PNG" alt="" /></span>
+                                 <div class="picture1">
+                                     <img src="images/means/k10.PNG" alt="" srcset="">
+                                 </div>
+
+
+                                 Training the K-Means Clustering Model
+                                 <span class="image fit"><img src="images/means/k11.PNG" alt="" /></span>
+                                 <h4> Data Visualization </h4>
+                                 <div class="picture1">
+                                     <img src="images/means/k12.PNG" alt="" srcset="">
+                                 </div>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br>
+                                 <br />
+                                 <h4> Summary of results </h4>
+
+                                 From the results, we have identified with the colors, a total of 5 different clusters as formed from the model. The green segment is the customers with the least income and least spending score, in the same vein, the magenta segment is the customer category with the most income and most spending score.
+
+
+
+                                 <span class="image fit"><img src="images/means/k6.PNG" alt="" /></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="KM.html" class="button primary fit small">Click to view code </a></li>
+
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

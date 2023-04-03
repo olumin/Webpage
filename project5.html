@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Classification Modelling for Wine quality  <br />
+                        using the Support Vector Machine (SVM) Algorithm
+                </header>
+
+                <!-- Text stuff -->
+                <h6>Data Source: UCI Machine Learning Repository </h6>
+                <h6>Libraries and Packages: Scikit-learn, Python-Numpy, Pandas</h6>
+
+
+                <p>
+                    <br>
+
+                    <h4> Outline</h4>
+
+                    <h4>  Understanding the objective</h4>
+                    <h4> Methodology</h4>
+                    <h5> 1.	Data Setup</h5>
+                    <h5> 2.	Data Cleaning </h5>
+                    <h5>3.	Distribution of classes-Splitting the data</h5>
+                    <h5>4.	Modelling with SVM</h5>
+                    <h5>5.	Model Evaluation</h5>
+                    <h5>6.	Saving and Loading</h5>
+                    <h5>7.	Summary of Results</h5>
+
+                    <br>
+
+                    <h4> Objective</h4> In this project we will be predicting the quality of wine based on 11 input variables (composition). The quality of wine affects the quality and quantity of purchase, however, certifying the product quality is usually a cost intensive process in the laboratory. Therefore, building a model for prediction has become of a great importance to the industry. Automating this process saves considerable amount of cost and resources.
+                    <br />
+                    The quality of wine can be judged by the smell, flavor, and color of the beverage. But machines obviously cannot taste, smell, or perceive the colorful nuances of wine as humans do. Thus, machines require more detailed and clear information (i.e., feature variables), so that one can build an ML model for wine quality prediction.
+                    The machine learning classifier takes some input data and tries to predict which class it belongs to: low-quality wine or high-quality wine using a specified criteria.
+                    Few other classifiers used for this type of projects include K-Nearest Neighbour(KNN), linear Regression, Naive Byes, Artificial Neural Networks e.t.c. The SVM was used in this project.
+                    <br />
+                    Features
+                    <li>Fixed acidity: Fied acidity are the low volatility organic acids found in wines and they are predominantly citric, tartaric, succinic and malic acid.   </li>
+                    <li>Volatile acidity: Volatile acidity are the set of short chain organic acid that can be extracted from the wine. They include formic acid, acetic acid, propionic acid, butyric acid with 99% being acetic that causes the vinegar taste </li>
+                    <li>Citric acid: Weak organic acid added to increase acidity and complement a fresh flavor </li>
+                    <li>Residual sugar: Amount of sugar left from the natural grape after alcoholic fermentation. Its responsible for the sweetness. Wines have residual sugar between 1 and 11g/L </li>
+                    <li>Chlorides: Accounts for the salinity of the wine. It is measured in mg/L </li>
+                    <li>Free sulfur dioxide: Free Sulfur dioxide preserves wine, preventing oxidation and browning.</li>
+                    <li>Total sulfur dioxide: Amount of free SO2 plus those bound with other chemicals in wine</li>
+                    <li>Density: </li>Depends of concentration of alcohol, sugar, glycol and dissolved solids. It is measred in kg/m3
+                    <li>pH: The pH is used to check the acidity or alkalinity of wine. Studies have shown that the pH of a red wine should be in the 3.4-3.6 range. under 3.4 indicates too sour, 3.6 is unstable and has a low shelf life</li>
+                    <li>Sulfates: An antibacterial and antioxidant agent added to wine to preserve the flavor and freshness.</li>
+                    <li>Alcohol: The percentage of alcohol in wine. A higher concentration leadds to a better quality.</li>
+
+                    Target Variable
+                    The target variable is based on scores from 0 to 10, and the product is classified based on an assigned value of this score.
+                    <br>
+                    <h4> Methodology </h4>
+
+                   <h4>1.Data Setup<br></h4>
+                    <ul>
+                        <li>Pip installing the dependencies.</li>
+                        <li>Importing the dataset and required libraries</li>
+
+                    </ul>
+                    <span class="image fit"><img src="images/wine/w1.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/wine/w2.PNG" alt="" /></span>
+
+
+                    <h4>  2. Data Cleaning </h4>
+                    The data was inspected for null values to remove abnormality. However, the dataset showed no missing values.
+                    <span class="image fit"><img src="images/wine/w3.PNG" alt="" /></span>
+
+
+                    <h4>  3.Distribution of Classes </h4>
+                    Here i chose the feature(residual sugar) and assigned a good quality of wine as the one in which the residual sugar is 2.0 and bad as 9.0.
+                    <span class="image fit"><img src="images/wine/w4.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/wine/w5.PNG" alt="" /></span>
+                    <h4>  3b Split data into Train/Test </h4>
+                    The data was split into x and y for training and testing using the train-test split. I used 20% of my data for training and 80 percent for testing.
+                    <span class="image fit"><img src="images/wine/w6.PNG" alt="" /></span>
+
+                    <h4>  4. Modelling with SVM </h4> The SVM was imported from the scikitlearn library.
+                    <span class="image fit"><img src="images/wine/w7.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/wine/w8.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/wine/w9.PNG" alt="" /></span>
+
+                    <h4>  4. Model Evaluation </h4> The model using the sklearn metrics F1, precision, accuracy, recall as shown in the classification report below.
+                    <span class="image fit"><img src="images/wine/w10.PNG" alt="" /></span>
+
+
+                    <h4>  5.Saving and Loading the Model </h4> The model was saved and loaded for testing using the pickle library.
+                    <span class="image fit"><img src="images/wine/w11.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/wine/w112PNG" alt="" /></span>
+                    The result was assigned a conditional statement for classification after loading as shown above. Please check the model deployment section to view final result.
+
+                    <h4>  5. Summary of Result </h4>
+
+                    The SVM has proven to be a good classification algorithm for this project. The model has an average score of 60% which is quite workable. Even though machine learning is subject to a lot of improvement from errors, we believe that ML can be safely used for product quality certification in the industry.
+
+
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="wine.html" class="button primary fit small">Click to view code</a></li>
+                    <li><a href="https://olumin-apps-winequality-coz8m2.streamlit.app" class="button primary fit small">View the deployed Model</a></li>
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

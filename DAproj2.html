@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Customer Segmentation using RFM Analysis <br>
+                       
+</header>
+
+                <!-- Text stuff -->
+                <h4>Data Source: Kaggle(Customer Loyality dataset)</h4>
+                <h4>Softwares: Tableau, Microsoft Excel </h4>
+                
+                
+
+                <p>
+                    <br>
+
+                    <h4> Outline</h4>
+
+                    <h4> 1. Understanding the objective </h4>
+                    <h4> 2. Requirements </h4>
+                    <h4> 3.	Data Analysis project pipeline </h4>
+
+
+
+                    <br>
+
+
+                    <h4> Understanding the Objective </h4> The basic premise is to divide our customer into different buckets or segments based on their behaviours. Using data to categorize customers to help interact with the business, we can score each of them using different metrics. The Recency, Frequency, Monetary score of customers helps us to know which customer is more valuable to the business.
+                    
+                    <style>
+                        img {
+                            max-width: 200%;
+                            max-height: 200%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/RFM/rf1.PNG" alt="" srcset="">
+                    </div>
+
+
+
+                 <h4>Benefits <br></h4>
+                    <ul>
+                        <li>To improve sales.</li>
+                        <li>To improve marketing campaigns </li>
+                        <li>Increase customer retention and decrease churn </li>
+                        <br>
+
+
+
+                        <h4>  2. Requirements </h4>
+                        Build a database to segment customers based on their purchase patterns.
+                        <li>Are there loyal customers?</li>
+                        <li>Should we increase our marketing campaign?</li>
+                        <br>
+
+                        <h4>  3. Data Analysis project pipeline </h4>
+
+                        <span class="image fit"><img src="images/RFM/rf2.PNG" alt="" /></span>
+
+
+                        <h4>  Importing the dataset </h4>
+                        The cleaned dataset was imported in Excel csv format into the Tableau software.
+                        <span class="image fit"><img src="images/RFM/rf3.PNG" alt="" /></span>
+
+                        <h4> Calculating Recency, Frequency, Monetary value </h4>
+
+                        The Recency of customers was calculated by subtracting the current date from the Order year and then taking the minimum value.
+                        <span class="image fit"><img src="images/RFM/rf4.PNG" alt="" /></span>
+                        The Frequency is a count of the purchases ade during some period of time. In this case, from the available data, I took a distict count of the Order year for the customer.
+                        <span class="image fit"><img src="images/RFM/rf5.PNG" alt="" /></span>
+                        The Monetary value was calculated by taking a sum of the Revenue which is the Total price X Quantity sold for each customers
+                        <span class="image fit"><img src="images/RFM/rf6.PNG" alt="" /></span>
+                        <h4> Exporting data into excel </h4> The results was exported into the Excel workbook to assign scores to each customers. This was done by finding the quartile ranges. The Q1, Q2 and Q3 was used as a measure.
+                        We divide the scores into 4. The customer who visited recently scores the highest score. I assigned a score of 4 for that, else if recency value is less than Q1 value, I assigned score 4, if less than median Q2 but >Q1,3, if recency less than Q2 but greater than Q3, i assigned 2, for every customer that haven't visited for in the last 30 days I assigned them the minimum score of 1.
+                        <span class="image fit"><img src="images/RFM/rf7.PNG" alt="" /></span>
+                        The same method applies to frequency, for those frequency less than 2 i.e the customer only visited once, i assigned a score of 1 (lowest), if its less than 5, score 2, if less than 10, score 3 , those greater than 10, score 4. Tis same applies to the monetary score. If monetary value is less than Q2, greater than Q1, we give them 2, those that have spent more than Q3value gets the highest score 3 as described in the formula bar.
+                        <span class="image fit"><img src="images/RFM/rf8.PNG" alt="" /></span>
+                        In the same manner, I segmented the customers into "Follow up", "Trace customer","Loyal customers" as assigned by me based on their Rscore,Fscore,and M-score. e,g those with R-score of 4, F-score of 2, M-score of 4 as "Loyal customers". This was achieved using the filter button.
+                        <span class="image fit"><img src="images/RFM/rf9.PNG" alt="" /></span>
+
+                        <h4>  Summary of Findings </h4>
+                        The RFM analysis has identified a fair amount of Loyal customers, as highlighted by the quartile ranges. About 75% of customers have the high monetary value, however, they do not patronize frequently, and this percentage of customers have visited for a long time.Majority have been categorized as trace and follow ups.Results shows that there is a need to increase marketing campaigns, advertisment and followups.
+
+
+
+
+
+
+
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="https://public.tableau.com/app/profile/olumide.akinwe/viz/RFMProject_16797856812110/Frequency?publish=yes" class="button primary fit small">View on Tableau Public </a></li>
+                   
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Elements Reference - Deployed Models by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Project Page</a></li>
+
+
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://github.com/olumin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <h3>
+                        Predicting the Selling Price of Cars <br />
+                        using Linear regression, RandomForest Regressor.
+                    </h3>
+                </header>
+                <div class="picture1">
+                    <img src="images/carsales/fgh.jpg" alt="" srcset="">
+                </div>
+                <br /><br />
+                <!-- Text stuff -->
+                <h5>Data Source: Kaggle</h5>
+                <h5>Libraries and Packages: Scikit-learn, Python-Numpy, Pandas</h5>
+
+                <p>
+                    <br>
+
+                    <h4>Project Outline</h4>
+
+                    <h4> 1.	Understanding the objective</h4>
+                    <h4> 2.	Data Setup</h4>
+                    <h4> 3.	Data Cleaning & Exploratory Data Analysis (EDA)</h4>
+                    <h4>4.	Feature Engineering</h4>
+                    <h4>5.	Choosing an estimator</h4>
+                    <h4>6.	Model Evaluation</h4>
+                    <h4>7.	Saving and Loading</h4>
+                    <h4>8.	Summary of Results</h4>
+
+                    <br>
+
+                    <h4> 1.	 Objective</h4> The objective of this project is to provide a technology to determine the prices of new cars that is being produced. Employing the use of predictions models will help to set the most accurate prices for cars based on market value. thereby leading to better growth and outcomes for manufacturers.
+                    <br> <br><h4>2.Data Setup<br></h4>
+                    <ul>
+                        <li>Pip installing the dependencies.</li>
+                        <li>Importing the dataset and required libraries</li>
+
+                    </ul>
+                    <span class="image fit"><img src="images/carsales/pc1.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc2.PNG" alt="" /></span>
+
+                    <h4>  3. Data Cleaning & Exploratory Data Analysis (EDA)</h4>
+                    Data Cleaning and EDA was carried out on the datasets to examine the features. This was carried out checking and dropping all null values, checking and converting the datatypes as well as checking the unique features in each column.The cleaned dataset was separated into x(features) and y(target) variable
+
+                    <span class="image fit"><img src="images/carsales/pc3.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc4.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc5.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc6.PNG" alt="" /></span>
+
+                    <h4>  4. Feature Engineering </h4>
+                    Categorical features containing string datatype was transformed into numerical using the OneHotEncoder Column transformer.This will make data readable to the machine.
+                    The result from the Column transformer is inturn subjected into training and testing.
+
+                    <span class="image fit"><img src="images/carsales/pc7.PNG" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc8.PNG" alt="" /></span>
+
+                    <h4>  5. Choosing an Estimator </h4>
+                    <style>
+                        img {
+                            max-width: 230%;
+                            max-height: 400%;
+                        }
+
+                        .picture1 {
+                            width: 200px;
+                            height: 300px;
+                        }
+                    </style>
+                    <div class="picture1">
+                        <img src="images/carsales/px.png" alt="" srcset="">
+                    </div>
+
+
+
+                    Check <a href="https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">link</a>.
+                    <br><br>
+
+                    The Random Forest Regressor and Linear Regression was chosen as an estimator as prescribed by the scikit learn sheet in the documentation above. The x data was split into training and testing,the data used in training is about 20% indicated by test_size=0.2.The model was fit into train-data. The general score for the model was 35% and 30% respectively. This is the percentage of correctness of the models. The low value shows that the model needs to be improved.
+                    <span class="image fit"><img src="images/carsales/pc9.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc10.png" alt="" /></span>
+
+                    <h4>  6. Model Evaluation</h4>
+
+                    The score functions tells us how closely our model is close to a perfect for a perfect prediction. R-squared, Mean Absolute Error (MAE), Mean squared Error of the models were evaluated.
+                    <span class="image fit"><img src="images/carsales/pc11.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc12.png" alt="" /></span>
+                    Let's evaluate the two models using different performance metrics.
+                    R^2
+                    <span class="image fit"><img src="images/carsales/pc13.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc14.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc15.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc16.png" alt="" /></span>
+                    MAE <br>
+                    MAE is the average of the absolute differences between predictions and actual values. It gives an idea of how wrong the model predictions are.
+                    <span class="image fit"><img src="images/carsales/pc17.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc18.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc19.png" alt="" /></span>
+                    <span class="image fit"><img src="images/carsales/pc20.png" alt="" /></span>
+
+
+                    <h4>  7. Saving and Loading </h4>
+                    The pickle module was used to save the datasets to be deployed.
+                    <br /><br />
+
+                    <h4>  8. Summary of results </h4>
+                    The result of the model shows that this model need to be improved. This is due to the large error and difference between the actual and predicted as well as the low percentage of accuracy.
+                    <br>
+                    The complete code showing the model improvement can be found on my github page.
+
+                </p>
+                <hr />
+                <ul class="actions fit small">
+                    <li><a href="car.html" class="button primary fit small">Click to view code</a></li>
+                    <li><a href="Deployed.html" class="button primary fit small">Click to view deployed model</a></li>
+
+
+
+                </ul>
+                <ul>
+
+                    <a href="#top" class="button-64">scroll to top</a>
+                </ul>
+
+
+                <h4>Social</h4>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/olumide-akinwe-13212719a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                    <li><a href="" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+
+                    <li><a href="https://github.com/olumin" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+                </ul>
+
+
+
+
+
+
+
+</div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+</html>
