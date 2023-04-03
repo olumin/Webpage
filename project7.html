@@ -76,6 +76,7 @@
                     <br>
 
                     <h4> Objective</h4>  Patients and medical attendants face a lot of uncertainity during, and after hospital encounters. Uncertainities like the possibilitty of a patient being diagnosed of an ailment after measuring certain vital signs. Machine learning models are capable of predicting a patient's outcome with up to a 90-95% accuracy. In this project, we will be building a model to predict and classify patients with the possibility of Brain stroke using the Logistic Regression Algorithm.<br>
+                   <br />
                     <h4> Features </h4>
                     <h4> Categorical features </h4>
 
@@ -112,11 +113,13 @@
                         bmi- body mass index
                     </li>
 
+                    <br />
 
 
 
                     <h4>Output Variables </h4> The target shows the diagnosis of brain stroke: Displays whether the individual is suffering from brain stroke or not :
-                    0 = absence
+                    <br />
+                    0 = absence <br />
                     1 = present
 
                     The score is being used as a conditional statement for classification as viewed in the deployed model section.
@@ -167,12 +170,13 @@
                             max-height: 200%;
                         }
 
-                        .picture1 {
+                        .picture3 {
                             width: 200px;
                             height: 300px;
+                            padding-right:2em;
                         }
                     </style>
-                    <div class="picture1">
+                    <div class="picture3">
                         <img src="images/Brain/b11.PNG" alt="" srcset="">
                     </div>
 
@@ -184,6 +188,7 @@
                     <span class="image fit"><img src="images/Brain/b14.PNG" alt="" /></span>
                     The Area under the curve (AUC) score shows 85% accuracy. This is ususally adopted when the class is imbalanced.
                     <br>
+                    <br />
                     <h4> 6. Saving and Loading the Model</h4>
                     The trained model was saved and loaded with the pickle library for deployment.
                     <span class="image fit"><img src="images/Brain/b15.PNG" alt="" /></span>
